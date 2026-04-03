@@ -316,7 +316,9 @@ body{font-family:'IBM Plex Sans Arabic','Tajawal',sans-serif;background:var(--bg
           </select>
         </div>
         <div class="fg"><label>الرمز السري</label><input type="password" placeholder="أي رمز للتجربة"/></div>
-        <button class="btn-login" onclick="doLogin()">دخول المنصة</button>
+        <button onclick="if(document.getElementById('loginPass').value === 's98765') { login(); } else { alert('الرمز السري غير صحيح'); }" style="margin-top:16px;width:100%;padding:14px;background:linear-gradient(135deg, #2563eb, #1d4ed8);border:none;border-radius:10px;color:white;font-weight:bold;cursor:pointer;box-shadow:0 4px 12px rgba(37,99,235,0.3)">
+دخول المنصة
+</button>
       </div>
       <div id="guestLogin" style="display:none">
         <div class="alert a-info">دخول الزوار للاطلاع فقط — لا يمكن تعديل البيانات</div>
