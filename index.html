@@ -316,11 +316,11 @@ body{font-family:'IBM Plex Sans Arabic','Tajawal',sans-serif;background:var(--bg
           </select>
         </div>
         <div class="fg"><label>الرمز السري</label><input type="password" placeholder="أدخل الرمز السري"/></div>
-        <button class="btn-login" onclick="checkPassword()">دخول المنصة</button>
+        <button type="button" onclick="checkPassword()" style="margin-top:16px;width:100%;padding:14px;background:linear-gradient(135deg, #10b981, #059669);border:none;border-radius:10px;color:white;font-weight:bold;cursor:pointer;box-shadow:0 4px 12px rgba(16,185,129,0.3)">دخول المنصة</button>
         <script>
   function checkPassword() {
     var pass = document.getElementById('loginPass').value;
-    // غير الرقم "1234" للرقم السري الخاص بالعائلة
+    // غير الرقم "s98765" للرقم السري الخاص بالعائلة
     if (pass === "s98765") { 
       login(); // إذا الرقم صح، يفتح له المنصة
     } else {
