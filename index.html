@@ -1095,7 +1095,6 @@ function switchLTab(t){
   $('guestLogin').style.display=t==='guest'?'':'none';
 }
 function doLogin(){
-  if(document.getElementById('loginPass').value !== 's98765') { alert('الرمز السري غير صحيح'); return; }
   const v=$('userSel').value;
   if(!v){alert('اختر المستخدم');return}
   D.isAdmin=v==='admin'; D.isGuest=false;
