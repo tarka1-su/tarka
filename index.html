@@ -4699,6 +4699,19 @@ if (!localStorage.getItem('fbConfig')) {
     window.location.reload();
 }
 // ----------------------------------------
+  // --- كود التخطي التلقائي لصفحة الإعدادات ---
+if (!localStorage.getItem('fbConfig')) {
+    localStorage.setItem('fbConfig', JSON.stringify({
+        apiKey: "AIzaSyCmMKGBjt7NkjMaX2RoV2Wq0KGN27jWVvE",
+        authDomain: "tarka-alsulmi-54a7c.firebaseapp.com",
+        projectId: "tarka-alsulmi-54a7c",
+        storageBucket: "tarka-alsulmi-54a7c.firebasestorage.app",
+        messagingSenderId: "544368099550",
+        appId: "1:544368099550:web:aed63411f15284d9e6424f"
+    }));
+    window.location.reload();
+}
+// ----------------------------------------
 function applyFirebaseConfig(){
   const input=document.getElementById('fbConfigInput').value.trim();
   const errEl=document.getElementById('configError');
